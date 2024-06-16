@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg">
+</head>
+
+<body>
+
+  <div class="container-fluid px-0">
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg csheader zdex">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand ms-md-3 ms-lg-0" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="collapse navbar-collapse order-3 order-lg-2 text-bg-light" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item p-2">
+                <a id="nav-link" class="nav-link" aria-current="page" href="#!">Trang
+                  chủ</a>
+              </li>
+              <li class="nav-item p-2">
+                <a id="nav-link" class="nav-link  position-relative" href="#!contact">Về chúng tôi</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a id="nav-link"
+                  class="nav-link dropdown-toggle  position-relative "
+                  href="#!products" role="" data-bs-toggle="dropdown" aria-expanded="true">
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#!products">Tất cả sản phẩm</a></li>
+                  <li><a class="dropdown-item">Áo </a></li>
+                  <li><a class="dropdown-item">Quần</a></li>
+                  <li><a class="dropdown-item">Giày </a></li>
+                  <li><a class="dropdown-item">Phụ kiện</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a id="nav-link" class="nav-link  position-relative" href="#!product_details">Sale</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a id="nav-link"
+                  class="nav-link dropdown-toggle  position-relative "
+                  href="#!news" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tin tức
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#!news">Bắt kịp xu hướng</a></li>
+                  <li><a class="dropdown-item" href="#">Xây dựng phong cách</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a id="nav-link" class="nav-link position-relative" href="#!contact">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" ng-submit="searchProducts()" role="search">
+              <input ng-model="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button  class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+      
+          </div>
+      
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-2 order-lg-3">
+            <li class=" nav-item p-2 d-flex align-items-center">
+              <a class="text-decoration-none" href="#"><i class="bi bi-heart me-4 position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    9
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a class="text-decoration-none" href="#offcanvasRight" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag me-2  position-relative">
+                  <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-primary fs-7">10
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <!-- Vị trí này không hiển thị -->
+              
+              <!-- <span  ng-show="currentUser" class="dropdown dropstart">
+                <div data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"
+                  style="width: 28px;height: 28px;">
+                  <img style="border-radius: 50%; border: 1px solid;" ng-if="!isBase64(currentUser.img_user)" class="w-100"
+                    ng-src="../img/{{ currentUser.img_user }}" alt="">
+                  <img ng-if="isBase64(currentUser.img_user)" style="border-radius: 50%; border: 1px solid;" class="w-100"
+                    ng-src="{{ currentUser.img_user }}" alt="">
+                </div>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li class="dropdown-item">Xin chào: <strong class="text-primary">{{currentUser.name}}</strong></li>
+                  <li><a class="dropdown-item" href="#!inforUser">Xem thông tin</a></li>
+                  <li><a class="dropdown-item" ng-click="logout()">Đăng xuất</a></li>
+                </ul>
+              </span> -->
+              <span ng-hide="currentUser" class="dropdown dropstart">
+                <i class="bi bi-person-circle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"></i>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li><a class="dropdown-item" href="#!register">Đăng ký</a></li>
+                  <li><a class="dropdown-item" href="#!login">Đăng nhập</a></li>
+                </ul>
+              </span>
+            </li>
+          </ul>
+      
+        
+        </div>
+      
+      </nav>
+    </header>
+    <div class="container top-90">
+      <main class="main">
+        <!-- slide showw -->
+        <div class="slide-show">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/slider_1.webp" class="d-block w-100" alt="...">
+      
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/slider_2.png" class="d-block w-100" alt="...">
+              
+              </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- chinhsach -->
+        <section class="section_chinhsach py-4 border-bottom">
+          <div class="container " style="cursor:grab;">
+            <div id="owl-carousel1" class="owl-carousel owl-theme owl-loaded">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <div class="owl-item">
+                    <a href="" class="d-flex gap-2 text-decoration-none align-items-sm-center"
+                      title="Miễn phí vẫn chuyển">
+                      <div class="thumb-icon">
+                        <img width="40" height="40" src="img/chinhsach_1.png" alt="Miễn phí vẫn chuyển">
+                      </div>
+                      <div class="text my-auto">
+                        <span class="title hv">Miễn phí vẫn chuyển</span>
+                        <span class="des text-black fs-6_5">Cho đơn hàng từ 500K</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="owl-item">
+                    <a href="#" class=" d-flex gap-2 text-decoration-none">
+                      <div class="thumb-icon">
+                        <img width="40" height="40" src="img/chinhsach_2.png" alt="Đổi hàng tận nhà">
+                      </div>
+                      <div class="text my-auto">
+                        <span class="title hv">Đổi hàng tận nhà</span>
+                        <span class="des text-black fs-6_5">Trong vòng 7 ngày</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="owl-item">
+                    <a href="#" class="d-flex gap-2 text-decoration-none" title="Thanh toán COD">
+                      <div class="thumb-icon">
+                        <img width="40" height="40" src="img/chinhsach_3.png" alt="Thanh toán COD">
+                      </div>
+                      <div class="text my-auto">
+                        <span class="title hv">Thanh toán COD</span>
+                        <span class="des text-black fs-6_5">Hoặc thanh toán quét mã QR</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="owl-item">
+                    <a href="#" class="d-flex gap-2 text-decoration-none" title="Hotline: 19006750">
+                      <div class="thumb-icon">
+                        <img width="40" height="40" src="img/chinhsach_4.png" alt="Hotline: 19006750">
+                      </div>
+                      <div class="text my-auto">
+                        <span class="title hv">Hotline: 19006750</span>
+                        <span class="des text-black fs-6_5">Hỗ trợ từ 08h00 đến 22h00</span>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- search -->
+        <section class="section_search py-4">
+          <div class="row">
+            <div class="col-lg-5">
+              <h1 class="text-uppercase py-1 h2">Mặc gì hôm nay?</h1>
+              <div class="search-smart pt-lg-3 pb-md-3 pb-sm-3">
+                <form class="d-flex" role="search">
+                  <div class="input-group">
+                    <input class="form-control me-2 rounded-5 position-relative py-2" type="search"
+                      placeholder="Nhập tên sản phẩm..." aria-label="Search">
+                    <button class="btn btn-dark rounded-circle position-absolute end-0 mx-2" type="submit"><i
+                        class="bi bi-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="title-key mb-1 fs-5">
+                Từ khóa nổi bật ngày hôm nay
+              </div>
+              <ul class="list-unstyled d-flex flex-wrap gap-2 text-decoration-none text-dark">
+                <li><a href="#">Áo Thun</a></li>
+                <li><a href="#">Quần short</a></li>
+                <li><a href="#">Quần Kaki &amp; Chino</a>
+                </li>
+                <li><a href="#">Mắt Kính</a></li>
+                <li><a href="#">Áo Nỉ Và Len</a></li>
+                <li><a href="#">Áo Khoác</a></li>
+                <li><a href="#">Áo Sơmi</a></li>
+                <li><a href="#">Áo Polo</a></li>
+                <li><a href="#">Hoodie</a></li>
+                <li><a href="#">Tank Top - Áo Ba Lỗ</a>
+                </li>
+                <li><a href="#">Quần Jogger</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- danh mục -->
+        <div id="owl-carousel2" class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item">
+                <div class="thumb-danhmuc ">
+                  <picture class=" position-relative row">
+                    <img class="danhmuc-back" src="img/background_danhmuc_1.jpg" alt="Áo thời trang">
+                    <div class="thumb-content position-absolute zdex d-flex flex">
+                      <span class="title1 fs-5">Sản phẩm</span>
+                      <span class="title2 fs-3">Áo thời trang</span>
+                      <a href="san-pham-noi-bat" class="btn btn-primary rounded-5 btn-sm w-25 mt-3 text-light hvbg"
+                        title="xem thêm">Xem
+                        thêm</a>
+                    </div>
+                    <picture class="zdex wat">
+                      <img class="danhmuc-imgtop-0 position-absolute img-fluid zdex" src="img/danhmuc_1.jpg"
+                        alt="Áo thời trang">
+                    </picture>
+                  </picture>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="thumb-danhmuc ">
+                  <picture class=" position-relative row">
+                    <img class="danhmuc-back" src="img/background_danhmuc_1.jpg" alt="Áo thời trang">
+                    <div class="thumb-content position-absolute zdex d-flex flex">
+                      <span class="title1 fs-5">Sản phẩm</span>
+                      <span class="title2 fs-3">Áo thời trang</span>
+                      <a href="san-pham-noi-bat" class="btn btn-primary rounded-5 btn-sm w-25 mt-3 text-light hvbg "
+                        title="xem thêm">Xem
+                        thêm</a>
+                    </div>
+                    <picture class="zdex wat">
+                      <img class="danhmuc-imgtop-0 position-absolute img-fluid" src="img/danhmuc_2.jpg"
+                        alt="Áo thời trang">
+                    </picture>
+                  </picture>
+                </div>
+              </div>
+              <div class="owl-item">
+                <div class="thumb-danhmuc ">
+                  <picture class=" position-relative row">
+                    <img class="danhmuc-back" src="img/background_danhmuc_3.jpg" alt="Áo thời trang">
+                    <div class="thumb-content position-absolute zdex d-flex flex">
+                      <span class="title1 fs-5">Sản phẩm</span>
+                      <span class="title2 fs-3">Áo thời trang</span>
+                      <a href="san-pham-noi-bat" class="btn btn-primary rounded-5 btn-sm w-25 mt-3 text-light "
+                        title="xem thêm">Xem
+                        thêm</a>
+                    </div>
+                    <picture class="zdex wat">
+                      <img width="244" height="288" class="danhmuc-imgtop-0 position-absolute img-fluid"
+                        src="img/danhmuc_1.jpg" alt="Áo thời trang">
+                    </picture>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- flash sale -->
+        <section class="section_flashsale py-4 mt-5 rounded-2">
+          <div class="container">
+            <div class="flash-header row mb-4 text-center">
+              <div class="col-lg-2"><a class="h3 fw-bold" href="#">Flash Sale</a><i class="fa-duotone ms-3 text-primary fa-circle-dot fa-beat-fade"></i></div>
+              <div class="col-lg-8 text-center text-secondary">Combo 599K: Back to School - Share Giảm 239K khi mua 1
+                Collar Shirt + 1
+                Smart
+                Pants</div>
+              <div class="col-lg-2">Chương trình đã kết thúc</div>
+            </div>
+            <!-- modal -->
+
+            <!--end modal -->
+            <!-- --main -->
+            <div id="owl-carousel3" class="owl-carousel owl-theme owl-loaded">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <div class="owl-item">
+                    <div class="card">
+                      <div class="img-spfl position-relative card-img-top">
+                        <img src="img/flash-sale1.png" alt="" class="sp">
+                        <div class="img-khung">
+                          <img src="img/khung_flash.png" class="mt position-absolute top-0 w-100" alt="">
+                          <a class="hv" href=""><i
+                              class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                        </div>
+                        <div class="row">
+                          <div class="action text-center position-absolute top-50">
+                            <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                        </div>
+                        <div class="card-text row">
+                          <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                          <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                        </div>
+                        <div class="color-video d-flex align-items-center py-1">
+                          <div style="background-color:#ffffff" class="swatches"></div>
+                          <div style="background-color:#000000" class="swatches"></div>
+                          <div style="background-color:#15841e" class="swatches"></div>
+                          <div class="count-color">
+                            + 1
+                          </div>
+                        </div>
+                        <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                          <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                              class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                          <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                              class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                        </div>
+                        <div class="elio-productcount">
+                          <div class="countdown">
+                            <span class="tite row fw-bold fs-6_5 align-items-end wat">
+                              <img alt="countdown" width="28" height="28" class="lazyload loaded col-auto"
+                                src="img/hot-sale_1.png" data-was-processed="true">Đã bán 83</span>
+                            <div class="line mt-1"><span style="width:92%;"> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="card">
+                      <div class="img-spfl position-relative card-img-top">
+                        <img src="img/flash-sale2.png" alt="" class="sp">
+                        <div class="img-khung">
+                          <img src="img/khung_flash.png" class="mt position-absolute top-0 w-100" alt="">
+                          <a class="hv" href=""><i
+                              class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                        </div>
+                        <div class="row">
+                          <div class="action text-center position-absolute top-50">
+                            <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                              data-bs-target="#modalProduct"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                        </div>
+                        <div class="card-text row">
+                          <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                          <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                        </div>
+                        <div class="color-video d-flex align-items-center py-1">
+                          <div style="background-color:#ffffff" class="swatches"></div>
+                          <div style="background-color:#000000" class="swatches"></div>
+                          <div style="background-color:#15841e" class="swatches"></div>
+                          <div class="count-color">
+                            + 1
+                          </div>
+                        </div>
+                        <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                          <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                              class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                          <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                              class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                        </div>
+                        <div class="elio-productcount">
+                          <div class="countdown">
+                            <span class="tite row fw-bold fs-6_5 align-items-end wat">
+                              <img alt="countdown" width="28" height="28" class="lazyload loaded col-auto"
+                                src="img/hot-sale_1.png" data-was-processed="true">Đã bán 83</span>
+                            <div class="line mt-1"><span style="width:92%;"> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="card">
+                      <div class="img-spfl position-relative card-img-top">
+                        <img src="img/flash-sale3.png" alt="" class="sp">
+                        <div class="img-khung">
+                          <img src="img/khung_flash.png" class="mt position-absolute top-0 w-100" alt="">
+                          <a class="hv" href=""><i
+                              class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                        </div>
+                        <div class="row">
+                          <div class="action text-center position-absolute top-50">
+                            <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                              data-bs-target="#modalProduct"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                        </div>
+                        <div class="card-text row">
+                          <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                          <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                        </div>
+                        <div class="color-video d-flex align-items-center py-1">
+                          <div style="background-color:#ffffff" class="swatches"></div>
+                          <div style="background-color:#000000" class="swatches"></div>
+                          <div style="background-color:#15841e" class="swatches"></div>
+                          <div class="count-color">
+                            + 1
+                          </div>
+                        </div>
+                        <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                          <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                              class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                          <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                              class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                        </div>
+                        <div class="elio-productcount">
+                          <div class="countdown">
+                            <span class="tite row fw-bold fs-6_5 align-items-end wat">
+                              <img alt="countdown" width="28" height="28" class="lazyload loaded col-auto"
+                                src="img/hot-sale_1.png" data-was-processed="true">Đã bán 83</span>
+                            <div class="line mt-1"><span style="width:92%;"> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="card">
+                      <div class="img-spfl position-relative card-img-top">
+                        <img src="img/flash-sale4.jpg" alt="" class="sp">
+                        <div class="img-khung">
+                          <img src="img/khung_flash.png" class="mt position-absolute top-0 w-100" alt="">
+                          <a class="hv" href=""><i
+                              class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                        </div>
+                        <div class="row">
+                          <div class="action text-center position-absolute top-50">
+                            <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                              data-bs-target="#modalProduct"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                        </div>
+                        <div class="card-text row">
+                          <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                          <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                        </div>
+                        <div class="color-video d-flex align-items-center py-1">
+                          <div style="background-color:#ffffff" class="swatches"></div>
+                          <div style="background-color:#000000" class="swatches"></div>
+                          <div style="background-color:#15841e" class="swatches"></div>
+                          <div class="count-color">
+                            + 1
+                          </div>
+                        </div>
+                        <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                          <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                              class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                          <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                              class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                        </div>
+                        <div class="elio-productcount">
+                          <div class="countdown">
+                            <span class="tite row fw-bold fs-6_5 align-items-end wat">
+                              <img alt="countdown" width="28" height="28" class="lazyload loaded col-auto"
+                                src="img/hot-sale_1.png" data-was-processed="true">Đã bán 83</span>
+                            <div class="line mt-1"><span style="width:92%;"> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="card">
+                      <div class="img-spfl position-relative card-img-top">
+                        <img src="img/flash-sale5.png" alt="" class="sp">
+                        <div class="img-khung">
+                          <img src="img/khung_flash.png" class="mt position-absolute top-0 w-100" alt="">
+                          <a class="hv" href=""><i
+                              class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                        </div>
+                        <div class="row">
+                          <div class="action text-center position-absolute top-50">
+                            <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                              data-bs-target="#modalProduct"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                        </div>
+                        <div class="card-text row">
+                          <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                          <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                        </div>
+                        <div class="color-video d-flex align-items-center py-1">
+                          <div style="background-color:#ffffff" class="swatches"></div>
+                          <div style="background-color:#000000" class="swatches"></div>
+                          <div style="background-color:#15841e" class="swatches"></div>
+                          <div class="count-color">
+                            + 1
+                          </div>
+                        </div>
+                        <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                          <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                              class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                          <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                              class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                        </div>
+                        <div class="elio-productcount">
+                          <div class="countdown">
+                            <span class="tite row fw-bold fs-6_5 align-items-end wat">
+                              <img alt="countdown" width="28" height="28" class="lazyload loaded col-auto"
+                                src="img/hot-sale_1.png" data-was-processed="true">Đã bán 83</span>
+                            <div class="line mt-1"><span style="width:92%;"> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="flash-footer text-center">
+              <a href="#" class="btn btn-primary rounded-5 py-2 hvbg mt-4 text-light">Xem thêm sản phẩm</a>
+            </div>
+
+          </div>
+        </section>
+        <!-- voucher -->
+        <section class="voucher row my-4">
+          <div id="owl-carousel4" class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="item-voucher position-relative">
+                    <img src="img/subtract.png" alt="" class="img-voucher">
+                    <div class="khung-voucher d-flex gap-4 position-absolute top-0 p-2">
+                      <img id="img-coupon" class="mt-2 ms-1" src="img/coupon_1.jpg" alt="">
+                      <div class="content-voucher">
+                        <div class="content-top vstack">
+                          <strong class="fs-6">TẶNG BẠN MỚI</strong>
+                          <span class="fs-7">Giảm 15% cho đơn hàng đầu tiên từ 699K</span>
+                        </div>
+                        <div class="content-btm hstack">
+                          <label class="vstack fs-6_5 text-primary">Nhập mã <strong>HELLO</strong></label>
+                          <a href="#" class="btn btn-primary text-light rounded-5 hvbg fs-7">Sao chép</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-voucher position-relative">
+                    <img src="img/subtract.png" alt="" class="img-voucher">
+                    <div class="khung-voucher d-flex gap-4 position-absolute top-0 p-2">
+                      <img id="img-coupon" class="mt-2 ms-1" src="img/coupon_1.jpg" alt="">
+                      <div class="content-voucher">
+                        <div class="content-top vstack">
+                          <strong class="fs-6">TẶNG BẠN MỚI</strong>
+                          <span class="fs-7">Giảm 15% cho đơn hàng đầu tiên từ 699K</span>
+                        </div>
+                        <div class="content-btm hstack">
+                          <label class="vstack fs-6_5 text-primary">Nhập mã <strong>HELLO</strong></label>
+                          <a href="#" class="btn btn-primary text-light rounded-5 hvbg fs-7">Sao chép</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-voucher position-relative">
+                    <img src="img/subtract.png" alt="" class="img-voucher">
+                    <div class="khung-voucher d-flex gap-4 position-absolute top-0 p-2">
+                      <img id="img-coupon" class="mt-2 ms-1" src="img/coupon_1.jpg" alt="">
+                      <div class="content-voucher">
+                        <div class="content-top vstack">
+                          <strong class="fs-6">TẶNG BẠN MỚI</strong>
+                          <span class="fs-7">Giảm 15% cho đơn hàng đầu tiên từ 699K</span>
+                        </div>
+                        <div class="content-btm hstack">
+                          <label class="vstack fs-6_5 text-primary">Nhập mã <strong>HELLO</strong></label>
+                          <a href="#" class="btn btn-primary text-light rounded-5 hvbg fs-7">Sao chép</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-voucher position-relative">
+                    <img src="img/subtract.png" alt="" class="img-voucher">
+                    <div class="khung-voucher d-flex gap-4 position-absolute top-0 p-2">
+                      <img id="img-coupon" class="mt-2 ms-1" src="img/coupon_1.jpg" alt="">
+                      <div class="content-voucher">
+                        <div class="content-top vstack">
+                          <strong class="fs-6">TẶNG BẠN MỚI</strong>
+                          <span class="fs-7">Giảm 15% cho đơn hàng đầu tiên từ 699K</span>
+                        </div>
+                        <div class="content-btm hstack">
+                          <label class="vstack fs-6_5 text-primary">Nhập mã <strong>HELLO</strong></label>
+                          <a href="#" class="btn btn-primary text-light rounded-5 hvbg fs-7">Sao chép</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- sản phẩm mới -->
+        <section class="newpro">
+          <div class="title d-flex pb-3">
+            <a class="h3 fw-bold me-auto hv" href="#">Sản phẩm mới</a>
+            <a href="" class="btn text-bg-dark rounded-5 hvbg"> Xem thêm...</a>
+          </div>
+          <!-- main newpro -->
+          <div id="owl-carousel5" class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/flash-sale1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_3_tag.png" class="mt position-absolute bottom-0 w-90" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                            data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/flash-sale1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_3_tag.png" class="mt position-absolute bottom-0 w-90" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/flash-sale1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_3_tag.png" class="mt position-absolute bottom-0 w-90" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/flash-sale1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_3_tag.png" class="mt position-absolute bottom-0 w-90" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/flash-sale1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_3_tag.png" class="mt position-absolute bottom-0 w-90" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main newpro -->
+        </section>
+        <!-- banner -->
+        <section class="banner py-5">
+          <div class="row g-4">
+            <div class="col-xl-6 col-lg-6 col-sm-12">
+              <a class="image-effect" href="#"><img class="w-100 rounded-2" src="img/banner1.png" alt=""></a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-sm-12">
+              <a class="image-effect" href="#"><img class="w-100 rounded-2" src="img/banner2.png" alt=""></a>
+            </div>
+          </div>
+        </section>
+        <!-- san phẩm nổi bật -->
+        <section class="sanphamnoibat mb-5">
+          <div class="title vstack pb-3">
+            <a class="h3 fw-bold hv" href="#">Sản phẩm nổi bật</a>
+            <div class="rowline d-flex section_search">
+              <ul class="list-unstyled d-flex flex-wrap gap-2 text-decoration-none text-dark  me-auto">
+                <li><a href="#">Áo Thun</a></li>
+                <li><a href="#">Quần short</a></li>
+                <li><a href="#">Quần Kaki &amp; Chino</a>
+                </li>
+              </ul>
+              <a href=""><button class="btn text-bg-dark rounded-5 hvbg">Xem thêm...</button></a>
+            </div>
+          </div>
+          <!-- main newpro -->
+          <div id="owl-carousel6" class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/newpro1.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_1_tag.png" class="mt position-absolute bottom-0 w-50" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/newpro2.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_1_tag.png" class="mt position-absolute bottom-0 w-50" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/newpro3.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_1_tag.png" class="mt position-absolute bottom-0 w-50" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/newpro4.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_1_tag.png" class="mt position-absolute bottom-0 w-50" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card">
+                    <div class="img-spfl position-relative card-img-top">
+                      <img src="img/newpro5.png" alt="" class="sp">
+                      <div class="img-khung">
+                        <img src="img/title_image_1_tag.png" class="mt position-absolute bottom-0 w-50" alt="">
+                        <a class="hv" href=""><i
+                            class="bi bi-qr-code-scan position-absolute top-0 m-4 text-primary zdex hv"></i></a>
+                      </div>
+                      <div class="row">
+                        <div class="action text-center position-absolute top-50">
+                          <a href="#" class="mx-2"><i class="bi bi-sliders ic ic1 hvbgpr"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-eye-fill ic ic2 hvbgpr" data-bs-toggle="modal"
+                                data-bs-target="#modalProduct"></i></a>
+                          <a href="#" class="mx-2"><i class="bi bi-heart-fill ic ic3 hvbgpr"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-title fw-bold fs-5_5 hv truncate">Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form
+                      </div>
+                      <div class="card-text row">
+                        <span class="card-text-left col-auto me-auto fs-6_5">Nam</span>
+                        <span class="card-text-right col-auto fs-6_5 ">Size S-Freesize</span>
+                      </div>
+                      <div class="color-video d-flex align-items-center py-1">
+                        <div style="background-color:#ffffff" class="swatches"></div>
+                        <div style="background-color:#000000" class="swatches"></div>
+                        <div style="background-color:#15841e" class="swatches"></div>
+                        <div class="count-color">
+                          + 1
+                        </div>
+                      </div>
+                      <div class="price-box d-flex align-items-center justify-content-between mb-1">
+                        <span class="fs-5 fw-bold text-primary">390.000₫ <span
+                            class="fs-6_5 text-gray fw-light text-decoration-line-through start-0">690.000₫</span></span>
+                        <div class="smart position-relative"><img class="" src="img/union.png" alt=""><span
+                            class="fw-bold text-light zdex position-absolute r5 top-0">- 43% </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main newpro -->
+        </section>
+        <!-- Set san phẩm nổi bật -->
+        <section class="set ">
+          <a class="h3 fw-bold hv" href="#">Set sản phẩm nổi bật</a>
+          <div class="row g-4 mt-1">
+            <div class="col-lg-4 col-md-6 col-sm-10 ">
+              <a class="image-effect" href="#"><img class="w-100 rounded-2" src="img/image_set_1.png" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-md-6  col-sm-10">
+              <a class="image-effect" href="#"><img class="w-100 rounded-2" src="img/image_set_2.png" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-md-0 d-sm-none d-lg-block">
+              <a class="image-effect" href="#"><img class="w-100 rounded-2" src="img/image_set_3.png" alt=""></a>
+            </div>
+          </div>
+        </section>
+        <!-- tin tức -->
+        <section class=" py-5">
+          <div class="title d-flex pb-3">
+            <a class="h3 fw-bold me-auto hv" href="#">Tin tức mới nhất</a>
+            <a href="" class="btn text-bg-dark rounded-5"> Xem thêm...</a>
+          </div>
+          <div id="owl-carousel7" class="owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div class="owl-stage" style="width: 1306px;">
+                <div class="owl-item">
+                  <div class="card border-0 position-relative">
+                    <div class="img-card rounded-2 card-img-top w-100 overflow-hidden">
+                      <img src="img/tintuc2.png" class=" zom" alt="...">
+                    </div>
+                    <a class="btn btn-primary text-light w-40 fs-7 position-absolute m-2 end-0" href="#">Ngày 26, Tháng
+                      08, 2023</a>
+                    <div style="
+                  height: 182px;
+                  display: flex;
+                  flex-direction: column;" class="card-body px-0">
+                      <strong data-bs-toggle="tooltip" data-bs-title="Phối đồ với quần relax chuẩn men dành cho nam"
+                        class="card-title text-uppercase truncate1">Phối đồ với quần relax chuẩn men dành cho
+                        nam</strong>
+                      <p class="card-text flex-grow-1 truncate3">Tuy nhiên...</p>
+                      <a href="#" class="hstack gap-2 text-center hv"><i class="bi bi-plus-circle fs-5"></i>Xem thêm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card border-0 position-relative">
+                    <div class="img-card rounded-2 card-img-top w-100 overflow-hidden">
+                      <img src="img/tintuc3.png" class=" zom" alt="...">
+                    </div>
+                    <a class="btn btn-primary text-light w-40 fs-7 position-absolute m-2 end-0" href="#">Ngày 26, Tháng
+                      08, 2023</a>
+                    <div style="
+                  height: 182px;
+                  display: flex;
+                  flex-direction: column;" class="card-body px-0">
+                      <strong data-bs-toggle="tooltip" data-bs-title="Phối đồ với quần relax chuẩn men dành cho nam"
+                        class="card-title text-uppercase truncate1">Phối đồ với quần relax chuẩn men dành cho
+                        nam</strong>
+                      <p class="card-text truncate3 flex-grow-1">Tuy nhiên, form relax được biết đến là một form quần
+                        rộng
+                        rãi với
+                        phần ống rộng
+                        nên có rất nhiều chàng trai không biết phải phối đồ cùng form quần này như thế nào để không bị
+                        xuề
+                        xòa, luộm thuộm. Nhưng không cần lo lắng, vì trong bài viết ngày hôm nay Routine sẽ mách cho bạn
+                        cách mix quần nam ống rộng chuẩn men, sành điệu nhất cho các chàng, cùng theo dõi nhé
+                        1. Quần form relax phối cùng áo sơ mi trắng basic
+                        Nếu bạn đang đau đầu vì không biết phối đồ với quần form relax như thế nào, tại sao...</p>
+                      <a href="#" class="hstack gap-2 text-center hv"><i class="bi bi-plus-circle fs-5"></i>Xem thêm</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="card border-0 position-relative">
+                    <div class="img-card rounded-2 card-img-top w-100 overflow-hidden">
+                      <img src="img/tintuc1.png" class=" zom" alt="...">
+                    </div>
+                    <a class="btn btn-primary text-light w-40 fs-7 position-absolute m-2 end-0" href="#">Ngày 26, Tháng
+                      08, 2023</a>
+                    <div style="
+                  height: 182px;
+                  display: flex;
+                  flex-direction: column;" class="card-body px-0">
+                      <strong data-bs-toggle="tooltip" data-bs-title="Phối đồ với quần relax chuẩn men dành cho nam"
+                        class="card-title text-uppercase truncate1">Phối
+                        đồ với quần relax chuẩn men dành cho nam</strong>
+                      <p class="card-text truncate3 flex-grow-1">Tuy nhiên, form relax được biết đến là một form
+                        quầnrộng
+                        rãi với
+                        phần ống rộng
+                        nên có rất nhiều chàng trai không biết phải phối đồ cùng form quần này như thế nào để không bị
+                        xuề
+                        xòa, luộm thuộm. Nhưng không cần lo lắng, vì trong bài viết ngày hôm nay Routine sẽ mách cho bạn
+                        cách mix quần nam ống rộng chuẩn men, sành điệu nhất cho các chàng, cùng theo dõi nhé
+                        1. Quần form relax phối cùng áo sơ mi trắng basic
+                        Nếu bạn đang đau đầu vì không biết phối đồ với quần form relax như thế nào, tại sao...</p>
+                      <a href="#" class="hstack gap-2 text-center hv"><i class="bi bi-plus-circle fs-5"></i>Xem thêm</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                  aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                class="owl-next"><span aria-label="Next">›</span></button></div>
+            <div class="owl-dots disabled"></div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+    <footer class="footer text-sm-center text-lg-start ">
+      <div class="mid-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ft-logo row text-center pt-5 pb-3">
+              <a href="/" class="logo" title="Logo">
+                <img src="img/logo-ft.png" alt="">
+              </a>
+            </div>
+            <div class="col-12 col-lg-4 ft-info ">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">Thông tin</h4>
+              <div class="group-address ">
+                <ul class="p-0 abage">
+                  <li class="mt-3">
+                    <span class="">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để
+                      có thể nâng
+                      cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-fill text-white"></i>
+                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone text-white"></i>
+                    <span>1900 6750</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-send text-white"></i>
+                    <a class="" title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                  </li>
+                </ul>
+              </div>
+              <span style="    margin-bottom: 10px;  display: block;">Folower chúng tôi:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#"><img width="32" height="32" src="img/social1.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social2.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social3.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social4.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social5.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-5 ft-menu">
+              <div class="row">
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Chính sách
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="/" title="Chính sách thành viên">Chính sách thành viên</a></li>
+                    <li><a href="/" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                    <li><a href="/" title="Chăm sóc khách hàng">Chăm sóc khách hàng</a></li>
+                    <li><a href="/" title="Phương thức thanh toán">Phương thức thanh toán</a></li>
+                    <li><a href="/" title="Chính sách đổi trả / bảo hành">Chính sách đổi trả / bảo hành</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Hướng dẫn
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="" title="Denny Member">Denny Member</a></li>
+                    <li><a href="" title="Mua hàng dễ dàng">Mua hàng dễ dàng</a></li>
+                    <li><a href="" title="Hợp tác nhượng quyền">Hợp tác nhượng quyền</a></li>
+                    <li><a href="" title="Hướng dẫn mua hàng online">Hướng dẫn mua hàng
+                        online</a></li>
+                    <li><a href="#" title="Hướng dẫn kiểm tra hạng thẻ thành viên">Hướng dẫn kiểm tra hạng thẻ thành
+                        viên</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">
+                Đăng ký nhận tin
+              </h4>
+              <form id="mc-form" class="newsletter-form position-relative pb-4" data-toggle="validator"
+                novalidate="true">
+                <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Nhập địa chỉ email">
+                <button class="btn btn-default position-absolute top-0 end-0" type="submit"
+                  aria-label="Đăng ký nhận tin" name="subscribe">
+                  <i class="bi bi-envelope text-white pb-2"></i>
+                </button>
+              </form>
+              <span style=" margin-bottom: 10px;  display: block;">Hình thức thanh toán:</span>
+              <ul
+                class="thanhtoan d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><img width="57" height="35" src="img/payment_1.png"></li>
+                <li><img width="57" height="35" src="img/payment_2.png"></li>
+                <li><img width="57" height="35" src="img/payment_3.png"></li>
+              </ul>
+              <span style="margin-bottom: 10px;  display: block;margin-top: 20px;">Liên kết sàn:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san1.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san2.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san3.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san4.png"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="copyright">
+        <div class="container text-center">
+          <span class="copy-right">Bản quyền thuộc về <b>Sudes theme</b>.</span>
+          <span class="opacity1">
+            Clone bởi: PS28717
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- MODAL PRODUCT  -->
+  <div class="modal fade" id="modalProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="modal-pro-img">
+                <img class="w-90 img-thumbnail" src="img/aothu1.png" alt="">
+              </div>
+              <div class="modal-pro-imgmini d-flex gap-4 w-100 mt-2">
+                <img src="img/aothu4.png" alt="" class="w-25 h-25 img-thumbnail">
+                <img src="img/aothu4.png" alt="" class="w-25 h-25 img-thumbnail">
+                <img src="img/aothu4.png" alt="" class="w-25 h-25 img-thumbnail">
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="details-pro">
+                <h1 class="title-product hv fw-bold fs-4">Áo Thun Nam Tay Ngắn In Hình Form Regular</h1>
+                <div class="thump-break hstack gap-3 my-2">
+                  <div class="brand">Thương hiệu: <span class="text-primary">Sudes</span></div>
+                  <div class="status">Tình trạng: <span class="text-primary">Còn hàng</span></div>
+                </div>
+                <div class="price-box hstack gap-4 position-relative mb-3">
+                  <strong class="text-primary h3">390.000đ</strong>
+                  <label class="text-decoration-line-through">690.000đ</label>
+                </div>
+                <div class="ct-size mb-3">
+                  <div class="text-black mb-1">Kích thước: size S</div>
+                  <a href="#" class="btn btn-primary text-light">S</a>
+                  <a href="#" class="btn btn-default border ">M</a>
+                  <a href="#" class="btn btn-default border">L</a>
+                  <a href="#" class="btn btn-default border">XL</a>
+                </div>
+                <div class="ct-color mb-3">
+                  <div class="text-black mb-1">Màu sắc: Trắng</div>
+                  <div class="color-video d-flex align-items-center py-1">
+                    <div style="background-color:#ffffff" class="swatches"></div>
+                    <div style="background-color:#000000" class="swatches"></div>
+                    <div style="background-color:#15841e" class="swatches"></div>
+                    <div class="count-color">
+                      + 1
+                    </div>
+                  </div>
+                </div>
+                <div class="soluong pt-2">
+                  <div class="text-black mb-1">Số lượng</div>
+                  <div class="row gap-3">
+                    <div class="col-md-3 col-sm-3 col-md-offset-3">
+                      <div class="input-group">
+                        <div class="qty-input border">
+                          <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                          <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                          <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="col-md-8 btn mb-3 col-sm-8 text-bg-light border hvbgpr" href="#"><i
+                        class="fs-6 bi bi-basket"></i>
+                      Thêm vào
+                      giỏ hàng</a>
+                  </div>
+                  <a href="#" class="col-12 fw-bold btn btn-primary hvbg text-light p-2">MUA NGAY</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANVAS  -->
+  <div class="offcanvas offcanvas-end " style="justify-items: center;" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header start-0">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng của bạn</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div ng-repeat="cart in cart" class="row py-3">
+        <div class="col-4">
+          <img  class="w-100" src="img/aothu2.png" alt="">
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="title-name">Ao thung hang quoc</div>
+            <a><i ng-click="removeCart(cart.id)" class="text-danger fs-5 bi bi-trash3"></i></a>
+          </div>
+          <div class="total hstack">
+            <div class="input-group">
+              <div class="qty-input border">
+                <button class="qty-count qty-count--minus" data-action="minus" type="button"
+                  ng-click="decreaseQuantity(cart.id)">-</button>
+                <input class="product-qty" type="number" value="1" name="product-qty" min="0" max="10" ng-model="cart.quantity">
+                <button class="qty-count qty-count--add" data-action="add" type="button"
+                  ng-click="increaseQuantity(cart.id)">+</button>
+              </div>
+            </div>
+            <div class="title">432,000đ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header vstack">
+        <!-- fake hiển thị -->
+        <div class=" d-none justify-content-between">
+          <p>Tổng số lượng:</p><strong>78</strong>
+          <!-- Vị trí này k hiển thị -->
+        </div>
+        <div class=" d-flex justify-content-between">
+          <p>Tổng số lượng:</p><strong>99</strong>
+          <!-- Vị trí này hiển thị -->
+        </div>
+        <div class=" d-flex justify-content-between">
+          <p>Tổng tiền:</p><strong ng-change="totalPrice()">827,000đ</strong>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-primary text-light bottom-0 w-90 m-3" href="#!cart">Thanh toán</a>
+  </div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/owl.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

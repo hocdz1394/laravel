@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết tin tức</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg csheader zdex">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand ms-md-3 ms-lg-0" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="collapse navbar-collapse order-3 order-lg-2 text-bg-light" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Về chúng tôi</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Sale</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tin tức
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-2 order-lg-3">
+            <li class="nav-item p-2">
+              <a class="text-decoration-none" href="#"><i class="bi bi-heart me-4 position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    9
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a class="text-decoration-none" href="#"><i class="bi bi-bag me-2  position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    10
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a href="#"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container top-90">
+      <!-- nav danh mục trang -->
+      <nav data-mdb-navbar-init class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container-fluid d-flex align-content-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb align-items-center mb-0">
+              <li class="breadcrumb-item"><a href="#"><i class=" fs-5 bi-house-door-fill"></i>Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a class="fs-6" href="#">Bắt kịp xu hướng</a>
+              <li class="breadcrumb-item active" aria-current="page"><a class="fs-6 text-primary" href="#"> Phối đồ với
+                  quần relax chuẩn men dành cho nam</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="blog main row">
+        <div class="col-md-3 order-sm-2 order-md-1 col-sm-12">
+          <div class="blog-row1 row mb-4">
+            <h1 class="text-uppercase fs-5 fw-bold">Danh mục tin tức</h1>
+            <div class="blog-catelgory row">
+              <span class="hvpr mt-3 fs-6 hvpr"><a class="hvpr" href="">Bắt kịp xu hướng</a></span>
+              <span class="hvpr mt-3 fs-6 hvpr"><a class="hvpr" href="">Xây dựng phong cách</a></span>
+            </div>
+          </div>
+          <div class="blog-row2 row">
+            <h1 class="text-uppercase fs-5 fw-bold">Tin tức nổi bật</h1>
+            <div class="blog-catelgory2">
+              <div class="blog-catelgory-item gap-1 hstack">
+                <a href=""><img class="w-75" src="img/category1.png" alt=""></a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </div>
+            <div class="blog-catelgory2">
+              <div class="blog-catelgory-item gap-1 hstack">
+                <a href=""><img class="w-75" src="img/category1.png" alt=""></a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 order-sm-1 order-md-2 col-sm-12">
+          <h1 class="h4 fw-bold text-uppercase">Phối đồ với quần relax chuẩn men dành cho nam</h1>
+          <div class="posts hstack gap-3 fs-6_5 ">
+            <div class="time-post f">
+              <i class="bi bi-clock fs-5 text-primary"></i>
+              26 tháng 08 2023
+            </div>
+            <div class="time-post">
+              <i class="bi bi-person-fill fs-5 text-primary"></i>
+              <span>Huỳnh Nguyễn Hồng Liêm</span>
+            </div>
+          </div>
+          <div class="rte">
+
+
+            <p>Tuy nhiên,&nbsp;form relax&nbsp;được biết đến là một form quần rộng rãi với phần ống rộng nên có rất
+              nhiều chàng trai không biết phải phối đồ cùng form quần này như thế nào để không bị xuề xòa, luộm thuộm.
+              Nhưng không cần lo lắng, vì trong bài viết ngày hôm nay Routine sẽ mách cho bạn&nbsp;cách mix quần nam ống
+              rộng chuẩn men, sành điệu&nbsp;nhất cho các chàng, cùng theo dõi nhé</p>
+            <h2><strong>1. Quần form relax phối cùng áo sơ mi trắng basic</strong></h2>
+            <p>Nếu bạn đang đau đầu vì không biết&nbsp;phối đồ với quần form relax như thế nào, tại sao các chàng không
+              thử ngay với item cơ bản nhất chính là những chiếc&nbsp;áo sơ mi trắng. Đây là một món đồ mà chàng trai
+              nào cũng nên sở hữu cho mình vài chiếc. Cả hai món đồ đều mang sẵn sự thanh lịch, chỉn chu nên rất thích
+              hợp diện để đi làm hoặc những buổi gặp gỡ quan trọng, yêu cầu sự nghiêm trang.</p>
+            <p>Sự kết hợp quần ống rộng relax cùng sơ mi trắng giúp cho các chàng một outfit vô cùng sành điệu cùng một
+              nét đẹp thanh lịch lại pha chút lãng tử khiến cô gái nào cũng phải mê mệt. Để diện outfit này đẹp nhất các
+              chàng nên khéo léo trong việc mix màu những item với nhau. Bạn có thể chọn những chiếc quần có tông màu
+              như nâu, be,... vừa dễ phối đồ vừa giúp vẻ ngoài thêm hiện đại, trẻ trung, bạn cũng đừng quên sơ vin để
+              tổng thể thêm phần chỉn chu và điển trai nhé.</p>
+            <p><a href="https://routine.vn/quan-kaki-nam-form-relax-10s22pca001.html" rel="noopener"
+                target="_blank"><img
+                  alt="Quần form relax phối cùng áo sơ mi trắng là cách mix cơ bản mang lại vẻ đẹp thanh lịch."
+                  src="https://routine.vn/media/wysiwyg/Blog/quan-form-relaxed-phoi-cung-ao-so-mi-trang-la-cach-mix-co-ban-mang-ve-dep-thanh-lich.jpg"></a>
+            </p>
+            <p>Quần form relax phối cùng áo sơ mi trắng là cách mix cơ bản mang lại vẻ đẹp thanh lịch.</p>
+            <h2><strong>2. Quần short form relax mix với áo thun</strong></h2>
+            <p>Nếu cách phối quần dài sẽ cho các chàng sự chỉn chu để đi làm, đi họp,... thì sự&nbsp;kết hợp giữa quần
+              short form relax cùng áo thun&nbsp;sẽ là sự lựa chọn tuyệt vời cho các chàng trong những buổi dạo phố, đi
+              chơi cùng bạn bè. Với cách phối cơ bản giữa những item sẵn có sẽ khiến các chàng tiết kiệm được khá nhiều
+              thời gian và công sức phối đồ trong cuộc sống hàng ngày của mình. Với một outfit đơn giản như vậy, đừng
+              quên mix thêm phụ kiện như giày, đồng hồ,... để tăng tính thời trang và điểm nhấn cho tổng thể của mình
+              nhé.</p>
+            <p><a href="https://routine.vn/quan-short-khaki-tui-oversize-relax-10f22psh011.html" rel="noopener"
+                target="_blank"><img
+                  alt="Quần short form relaxed cùng áo thun sẽ là sự lựa chọn tuyệt vời cho các chàng trong những buổi dạo phố, đi chơi cùng bạn bè."
+                  src="https://routine.vn/media/wysiwyg/Blog/quan-short-form-relaxed-cung-ao-thun-se-la-su-lua-chon-tuyet-voi-cho-cac-chang-trong-nhung-buoi-dao-pho-di-choi-cung-ban-be.jpg"></a>
+            </p>
+            <p>Quần short form relax cùng áo thun sẽ là sự lựa chọn tuyệt vời cho các chàng trong những buổi dạo phố, đi
+              chơi cùng bạn bè.</p>
+            <h2><strong>3. Quần form relax đi cũng với áo polo nam&nbsp;</strong></h2>
+            <p>Áo thun polo chính hãng&nbsp;chắc hẳn là một món đồ thần thành của tất cả các chàng trai, bởi nó có thể
+              dễ dàng sử dụng mọi lúc mọi nơi, dù đi làm, đi chơi hay du lịch các bạn để có thể dễ dàng bắt gặp được
+              chiếc áo này. Với khả năng dễ mix đồ của chiếc áo này cũng giúp chúng có thể kết hợp một cách hoàn hảo với
+              những chiếc&nbsp;quần phong cách ống rộng form relax. Để có thể tạo ra tổng thể thanh lịch, sành điệu nhất
+              các chàng nên chọn những item có thiết kế đơn giản nhất để tạo ra được vẻ đẹp đơn giản nhưng nam tính
+              nhất.</p>
+            <p><a href="https://routine.vn/quan-dai-linen-relax-10f22pca016.html" rel="noopener" target="_blank"><img
+                  alt="Quần form relaxed đi với áo polo nam là set đồ đơn giản mang vẻ đẹp trẻ trung, thanh lịch. "
+                  src="https://routine.vn/media/wysiwyg/Blog/quan-form-relaxed-di-voi-ao-polo-nam-la-set-do-djn-gian-mang-ve-dep-tre-trung-thanh-lich.jpg"></a>
+            </p>
+            <p>Quần form relax đi với áo polo nam là set đồ đơn giản mang vẻ đẹp trẻ trung, thanh lịch.</p>
+            <h2><strong>4. Quần ống rộng mix cùng áo hoodie, áo sweater</strong></h2>
+            <p>Form relax phối cùng với áo hoodie hoặc sweater&nbsp;là một cách kết hợp khá thú vị với các chàng trai
+              trẻ, yêu thích sự năng động, trẻ trung. Áo hoodie và Sweater đều là những item hot trend trong thời trang
+              giới trẻ ngày nay. Với sự đa dạng từ thiết kế đến chất liệu giúp kiểu áo này có thể sử dụng với mọi thời
+              điểm trong năm thay vì chỉ gói gọn trong những ngày lạnh như trước kia.</p>
+            <p>Vào những ngày hè oi bức, các bạn nam có thể rinh ngay những chiếc áo hoodie tay ngắn hoặc những chiếc áo
+              sweater mỏng và mix với chiếc quần short ống rộng để vừa thoải mái, thoáng mát vừa thể hiện cá tính, năng
+              động và cả sự trẻ trung của mình. Ngoài ra, các chàng có thể chọn những chất liệu thoải mái, có độ co giãn
+              để diện khi tham gia các hoạt động thể dục, thể thao.</p>
+            <h2><strong>5. Combo trẻ trung cùng áo sơ mi, áo thun và quần form relax</strong></h2>
+            <p>Áo sơ mi mix cùng áo thun bên trong là một cách phối đồ layer đang làm mưa làm gió trong ngành thời trang
+              khoảng thời gian gần đây. Set đồ này giúp cho các chàng tăng thêm sức hút của mình bởi sự trẻ trung, năng
+              động lại có phần cá tính hơn hẳn. Với độ thanh lịch mà set đồ này mang lại cũng có thể giúp chúng dễ dàng
+              mặc trong nhiều hoàn cảnh khác nhau cho chàng có thể sử dụng đa năng.</p>
+            <p>Điểm nhấn đặc biệt của&nbsp;cách phối đồ với quần form relax&nbsp;này nằm ở sự phối hợp màu sắc của những
+              item trong outfit. Vì vậy, các chàng nên chọn những màu trung tính, trầm để có thể dễ dàng mix với nhau và
+              cũng dễ thay đổi giữa các outfit với nhau. Với các chàng trai cá tính hơn có thể sử dụng các phụ kiện đi
+              kèm như mũ, giày để tăng tính năng động và thể hiện rõ hơn phong cách của mình.</p>
+            <p><a href="https://routine.vn/quan-vai-nam-tron-xep-ly-truoc-form-relax-10f22pfo013.html" rel="noopener"
+                target="_blank"><img
+                  alt="Outfit tạo vẻ đẹp sành điệu cho các chàng và vô cùng đa năng có thể sử dụng mọi lúc, mọi nơi."
+                  src="https://routine.vn/media/wysiwyg/Blog/outfit-tao-ve-dep-sanh-dieu-cho-cac-chang-va-vo-cung-da-nang-co-the-su-dung-moi-luc-moi-noi.jpg"></a>
+            </p>
+            <p>Outfit tạo vẻ đẹp sành điệu cho các chàng và vô cùng đa năng có thể sử dụng mọi lúc, mọi nơi.</p>
+            <p>Ngoài ra, các chàng có thể thay những chiếc quần form relax dài thành những chiếc quần đùi ống rộng để sử
+              dụng trong những thời điểm nóng nực như mùa hè này. Những chiếc&nbsp;quần đùi nam cao cấp&nbsp;sẽ mang đến
+              sự thoải mái tối đa, cho các chàng thoải mái vận động. Không những vậy chiếc quần này còn giúp tăng được
+              sự trẻ trung, năng động cho các chàng, trông chàng sẽ nam tính và cuốn hơn khi đi chơi, dạo phố cùng bạn
+              bè.</p>
+            <p><a href="https://routine.vn/quan-short-nam-tui-hop-tron-form-relax-10f22psh014.html" rel="noopener"
+                target="_blank"><img
+                  alt="Outfit cùng quần short form relax tăng được sự trẻ trung, năng động cho các chàng, trông chàng sẽ nam tính và cuốn hơn."
+                  src="https://routine.vn/media/wysiwyg/Blog/outfit-cung-quan-short-form-relaxed-tang-duoc-su-tre-trung-nang-dong-cho-cac-chang-trong-chang-se-nam-tinh-va-cuon-hon-hon.jpg"></a>
+            </p>
+            <p>Outfit cùng quần short form relax tăng được sự trẻ trung, năng động cho các chàng, trông chàng sẽ nam
+              tính và cuốn hơn.</p>
+            <h2><strong>6. Phối quần relax với áo tanktop nam&nbsp;</strong></h2>
+            <p>Một cách kết hợp mang sự thoải mái tối đa cùng vẻ đẹp cá tính cho các chàng trong mùa hè này. Sự rộng
+              rãi, thoải mái trong mọi kiểu quần từ ống dài đến dáng quần short của form relax thì không cần phải bàn
+              cãi. Còn với những chiếc áo tanktop, một kiểu áo cực hot bởi sự mát mẻ, thoải mái, phóng khoáng trong
+              những ngày nóng bức. Không những vậy kiểu áo này còn có thể dễ dàng giúp các chàng khoe trọn vẻ đẹp từ
+              body chuẩn men của mình. Với&nbsp;set đồ form relax dành cho nam&nbsp;này các chàng có thể diện để đi
+              chơi, dạo phố, đặc biệt là trong những chuyến du lịch biển vào ngày hè này.</p>
+            <h2><strong>7. Quần kaki relax mix với áo sơ mi tay ngắn</strong></h2>
+            <p>Quần kaki ống rộng&nbsp;khi mix cùng những chiếc áo sơ mi tay ngắn là một outfit mang đến vẻ đẹp lãng tử,
+              thanh lịch và đầy cuốn hút cho các chàng. Những chiếc áo sơ mi tay ngắn cũng là món đồ mang sẵn phong cách
+              trẻ trung, thoải mái cho các chàng có thể diện mọi nơi từ chốn công sở đến nơi hẹn hò. Tùy vào sở thích
+              mỗi người, mà các chàng có thể chọn một kiểu quần relax dài sành điệu hay quần short thoải mái tùy ý.
+              Chúng đều rất dễ phối cùng áo sơ mi tay ngắn để tạo ra những phong cách thời trang khác nhau.</p>
+
+          </div>
+          <div class="col-9 py-3">
+            <div class=" pd p-4 rounded-4 bg-lightgray">
+              <a class="text-secondary fw-bold" href="#">Xem thêm</a>
+              <ul class="view-more-list">
+                <li><a class="text-primary" href="#">Phối đồ với quần relax chuẩn men dành cho nam</a></li>
+                <li><a class="text-primary" href="#">Gợi ý 5 kiểu quần kaki nữ trẻ trung được giới trẻ lăng xê</a></li>
+                <li><a class="text-primary" href="#">Sportswear là gì? Chất liệu làm nên những bộ sportswear cao cấp</a></li>
+                <li><a class="text-primary" href="#">Phong cách thời trang được Gen Z nhiệt tình lăng xê 2023</a></li>
+                <li><a class="text-primary" href="#">5 cách phối đồ với áo varsity giúp bạn trông cực chất</a></li>
+                <li><a class="text-primary" href="#">Năng động cùng 5 cách mix đồ với áo khoác thể thao nam hot</a></li>
+                <li><a class="text-primary" href="#" class="view-more-link">Xem thêm</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-sm-center text-lg-start ">
+      <div class="mid-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ft-logo row text-center pt-5 pb-3">
+              <a href="/" class="logo" title="Logo">
+                <img src="img/logo-ft.png" alt="">
+              </a>
+            </div>
+            <div class="col-12 col-lg-4 ft-info ">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">Thông tin</h4>
+              <div class="group-address ">
+                <ul class="p-0 abage">
+                  <li class="mt-3">
+                    <span class="">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để
+                      có thể nâng
+                      cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-fill text-white"></i>
+                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone text-white"></i>
+                    <span>1900 6750</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-send text-white"></i>
+                    <a class="" title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                  </li>
+                </ul>
+              </div>
+              <span style="    margin-bottom: 10px;  display: block;">Folower chúng tôi:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#"><img width="32" height="32" src="img/social1.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social2.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social3.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social4.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social5.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-5 ft-menu">
+              <div class="row">
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Chính sách
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="/" title="Chính sách thành viên">Chính sách thành viên</a></li>
+                    <li><a href="/" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                    <li><a href="/" title="Chăm sóc khách hàng">Chăm sóc khách hàng</a></li>
+                    <li><a href="/" title="Phương thức thanh toán">Phương thức thanh toán</a></li>
+                    <li><a href="/" title="Chính sách đổi trả / bảo hành">Chính sách đổi trả / bảo hành</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Hướng dẫn
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="" title="Denny Member">Denny Member</a></li>
+                    <li><a href="" title="Mua hàng dễ dàng">Mua hàng dễ dàng</a></li>
+                    <li><a href="" title="Hợp tác nhượng quyền">Hợp tác nhượng quyền</a></li>
+                    <li><a href="" title="Hướng dẫn mua hàng online">Hướng dẫn mua hàng
+                        online</a></li>
+                    <li><a href="#" title="Hướng dẫn kiểm tra hạng thẻ thành viên">Hướng dẫn kiểm tra hạng thẻ thành
+                        viên</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">
+                Đăng ký nhận tin
+              </h4>
+              <form id="mc-form" class="newsletter-form position-relative pb-4" data-toggle="validator"
+                novalidate="true">
+                <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Nhập địa chỉ email">
+                <button class="btn btn-default position-absolute top-0 end-0" type="submit"
+                  aria-label="Đăng ký nhận tin" name="subscribe">
+                  <i class="bi bi-envelope text-white pb-2"></i>
+                </button>
+              </form>
+              <span style=" margin-bottom: 10px;  display: block;">Hình thức thanh toán:</span>
+              <ul
+                class="thanhtoan d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><img width="57" height="35" src="img/payment_1.png"></li>
+                <li><img width="57" height="35" src="img/payment_2.png"></li>
+                <li><img width="57" height="35" src="img/payment_3.png"></li>
+              </ul>
+              <span style="margin-bottom: 10px;  display: block;margin-top: 20px;">Liên kết sàn:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san1.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san2.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san3.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san4.png"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="copyright">
+        <div class="container text-center">
+          <span class="copy-right">Bản quyền thuộc về <b>Sudes theme</b>.</span>
+          <span class="opacity1">
+            Clone bởi: PS28717
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/owl.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

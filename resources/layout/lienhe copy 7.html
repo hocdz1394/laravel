@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi-tiet-san-pham</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg csheader zdex">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand ms-md-3 ms-lg-0" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="collapse navbar-collapse order-3 order-lg-2 text-bg-light" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Về chúng tôi</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Sale</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tin tức
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-2 order-lg-3">
+            <li class="nav-item p-2">
+              <a class="text-decoration-none" href="#"><i class="bi bi-heart me-4 position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    9
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a class="text-decoration-none" href="#"><i class="bi bi-bag me-2  position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    10
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a href="#"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- nav danh mục trang -->
+      <nav data-mdb-navbar-init class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container-fluid d-flex align-content-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb align-items-center mb-0">
+              <li class="breadcrumb-item"><a href="#"><i class=" fs-5 bi-house-door-fill"></i>Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a class="fs-6 text-primary" href="#">Liên hệ</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="main lh row">
+        <div class="lh-left col-md-6 col-sm-12">
+          <div class="row row1">
+            <h1 class="h4 fw-bold mb-4">Cửa hàng Denny Fashion</h1>
+            <div class="lh-contact row">
+              <div class="lh-contact-item col-md-6 d-flex">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="hl-text vstack">
+                  <strong>Địa chỉ</strong>
+                  <p class="fs-6_5">70 Lữ Gia, Phường 15, Quận 11, TP. HCM</p>
+                </div>
+              </div>
+              <div class="lh-contact-item col-md-6 d-flex">
+                <i class="bi bi-clock-fill"></i>
+                <div class="hl-text vstack">
+                  <strong>Thời gian làm việc</strong>
+                  <p class="fs-6_5">8h - 22h
+                    Từ thứ 2 đến chủ nhật</p>
+                </div>
+              </div>
+              <div class="lh-contact-item col-md-6 d-flex">
+                <i class="bi bi-telephone"></i>
+                <div class="hl-text vstack">
+                  <strong>Hotline</strong>
+                  <p class="fs-6_5">1900 6750</p>
+                </div>
+              </div>
+              <div class="lh-contact-item col-md-6 d-flex">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="hl-text vstack">
+                  <strong>Email</strong>
+                  <p class="fs-6_5">support@sapo.vn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row2">
+            <h1 class="h4 fw-bold my-4">Liên hệ với chúng tôi</h1>
+            <p class="fs-6">Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với
+              bạn sớm nhất có thể .</p>
+            <form class="mb-2" action="">
+              <input class="form-control mb-2" placeholder="Nhập tên" type="text" name="" id="">
+              <input class="form-control mb-2" placeholder="Nhập Email" type="email" name="" id="">
+              <input class="form-control mb-2" placeholder="Điện thoại" type="text" name="" id="">
+              <textarea class="form-control content-area form-control-lg" name="" id="" cols="77">Nội dung</textarea>
+            </form>
+          </div>
+
+        </div>
+        <div class="lh-right col-md-6 col-sm-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443592406524!2d106.62525347525845!3d10.853826357760815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1710887636961!5m2!1svi!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-sm-center text-lg-start ">
+      <div class="mid-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ft-logo row text-center pt-5 pb-3">
+              <a href="/" class="logo" title="Logo">
+                <img src="img/logo-ft.png" alt="">
+              </a>
+            </div>
+            <div class="col-12 col-lg-4 ft-info ">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">Thông tin</h4>
+              <div class="group-address ">
+                <ul class="p-0 abage">
+                  <li class="mt-3">
+                    <span class="">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để
+                      có thể nâng
+                      cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-fill text-white"></i>
+                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone text-white"></i>
+                    <span>1900 6750</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-send text-white"></i>
+                    <a class="" title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                  </li>
+                </ul>
+              </div>
+              <span style="    margin-bottom: 10px;  display: block;">Folower chúng tôi:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#"><img width="32" height="32" src="img/social1.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social2.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social3.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social4.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social5.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-5 ft-menu">
+              <div class="row">
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Chính sách
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="/" title="Chính sách thành viên">Chính sách thành viên</a></li>
+                    <li><a href="/" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                    <li><a href="/" title="Chăm sóc khách hàng">Chăm sóc khách hàng</a></li>
+                    <li><a href="/" title="Phương thức thanh toán">Phương thức thanh toán</a></li>
+                    <li><a href="/" title="Chính sách đổi trả / bảo hành">Chính sách đổi trả / bảo hành</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Hướng dẫn
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="" title="Denny Member">Denny Member</a></li>
+                    <li><a href="" title="Mua hàng dễ dàng">Mua hàng dễ dàng</a></li>
+                    <li><a href="" title="Hợp tác nhượng quyền">Hợp tác nhượng quyền</a></li>
+                    <li><a href="" title="Hướng dẫn mua hàng online">Hướng dẫn mua hàng
+                        online</a></li>
+                    <li><a href="#" title="Hướng dẫn kiểm tra hạng thẻ thành viên">Hướng dẫn kiểm tra hạng thẻ thành
+                        viên</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">
+                Đăng ký nhận tin
+              </h4>
+              <form id="mc-form" class="newsletter-form position-relative pb-4" data-toggle="validator"
+                novalidate="true">
+                <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Nhập địa chỉ email">
+                <button class="btn btn-default position-absolute top-0 end-0" type="submit"
+                  aria-label="Đăng ký nhận tin" name="subscribe">
+                  <i class="bi bi-envelope text-white pb-2"></i>
+                </button>
+              </form>
+              <span style=" margin-bottom: 10px;  display: block;">Hình thức thanh toán:</span>
+              <ul
+                class="thanhtoan d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><img width="57" height="35" src="img/payment_1.png"></li>
+                <li><img width="57" height="35" src="img/payment_2.png"></li>
+                <li><img width="57" height="35" src="img/payment_3.png"></li>
+              </ul>
+              <span style="margin-bottom: 10px;  display: block;margin-top: 20px;">Liên kết sàn:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san1.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san2.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san3.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san4.png"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="copyright">
+        <div class="container text-center">
+          <span class="copy-right">Bản quyền thuộc về <b>Sudes theme</b>.</span>
+          <span class="opacity1">
+            Clone bởi: PS28717
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/owl.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

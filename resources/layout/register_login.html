@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - Đăng ký - Quên mật khẩu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg csheader zdex">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand ms-md-3 ms-lg-0" href="#"><img src="img/logo.png" alt=""></a>
+          <div class="collapse navbar-collapse order-3 order-lg-2 text-bg-light" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item p-2">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Về chúng tôi</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Sale</a>
+              </li>
+              <li class="nav-item p-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tin tức
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">Đăng nhập</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-2 order-lg-3">
+            <li class="nav-item p-2">
+              <a class="text-decoration-none" href="#"><i class="bi bi-heart me-4 position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    9
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a class="text-decoration-none" href="#"><i class="bi bi-bag me-2  position-relative">
+                  <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-primary fs-7">
+                    10
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i></a>
+              <a href="#"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container top-90">
+      <!-- nav danh mục trang -->
+      <nav data-mdb-navbar-init class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+        <div class="container-fluid d-flex align-content-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb align-items-center mb-0">
+              <li class="breadcrumb-item"><a href="#"><i class=" fs-5 bi-house-door-fill"></i>Trang chủ</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a class="fs-6 text-primary" href="#">Đăng nhập</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="loginregit">
+        <nav>
+          <div class="nav nav-tabs justify-content-center border-0" id="nav-tab  btlogin" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">Đăng nhập</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Đăng ký</button>
+          </div>
+        </nav>
+        <div class="tab-content mb-6" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 col-xl-4 offset-xl-4 offset-lg-4 offset-md-3 offset-xl-3 ">
+              <h1 class="text-uppercase fs-5 bd py-3 text-center ">Đăng nhập</h1>
+              <form class="text-center " action="">
+                <input type="email" class="form-control mb-3" placeholder="Email" name="" id="">
+                <input type="password" class="form-control mb-3" placeholder="Mật khẩu" name="" id="">
+                <input class="btn btn-primary text-light hvbg col-12" type="submit" value="Đăng nhập">
+                <a class="hv text-center" data-bs-toggle="collapse" href="#collapseOne">Quên mật khẩu</a>
+                <!-- toggle -->
+                <div id="collapseOne" class="accordion-collapse collapse pt-4" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <input type="email" class="form-control mb-3" placeholder="Email" name="" id="">
+                    <input class="btn btn-primary text-light hvbg col-12" type="submit" value="Lấy lại mật khẩu">
+                  </div>
+                </div>
+                <!-- end toggle -->
+                <p>Hoặc đăng nhập bằng</p>
+                <div class="socal">
+                  <a href="#" class="btn btn-primary text-light"><i
+                      class="fa-brands fa-facebook-f text-light fs-5_5 p-2"></i></i>Facebook</a>
+                  <a href="#" class="btn btn-danger text-light"><i
+                      class="fa-brands fa-google text-light fs-5_5 p-2"></i></i>Google</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 col-xl-4 offset-xl-4 offset-lg-4 offset-md-3 offset-xl-3 ">
+              <h1 class="text-uppercase fs-5 bd py-3 text-center ">Đăng ký</h1>
+              <form class="text-center " action="">
+                <input type="text" class="form-control mb-3" placeholder="Họ tên" name="" id="">
+                <input type="email" class="form-control mb-3" placeholder="Email" name="" id="">
+                <input type="text" class="form-control mb-3" placeholder="Số điện thoại" name="" id="">
+                <input type="password" class="form-control mb-2" placeholder="Mật khẩu" name="" id="">
+                <input class="btn btn-primary text-light hvbg col-12" type="submit" value="Đăng Ký">
+                <p>Hoặc đăng nhập bằng</p>
+                <div class="socal">
+                  <a href="#" class="btn btn-primary text-light"><i
+                      class="fa-brands fa-facebook-f text-light fs-5_5 p-2"></i></i>Facebook</a>
+                  <a href="#" class="btn btn-danger text-light"><i
+                      class="fa-brands fa-google text-light fs-5_5 p-2"></i></i>Google</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-sm-center text-lg-start ">
+      <div class="mid-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ft-logo row text-center pt-5 pb-3">
+              <a href="/" class="logo" title="Logo">
+                <img src="img/logo-ft.png" alt="">
+              </a>
+            </div>
+            <div class="col-12 col-lg-4 ft-info ">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">Thông tin</h4>
+              <div class="group-address ">
+                <ul class="p-0 abage">
+                  <li class="mt-3">
+                    <span class="">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để
+                      có thể nâng
+                      cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-fill text-white"></i>
+                    <span>70 Lữ Gia, Phường 15, Quận 11, TP. HCM</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone text-white"></i>
+                    <span>1900 6750</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-send text-white"></i>
+                    <a class="" title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                  </li>
+                </ul>
+              </div>
+              <span style="    margin-bottom: 10px;  display: block;">Folower chúng tôi:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#"><img width="32" height="32" src="img/social1.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social2.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social3.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social4.png" alt=""></a></li>
+                <li><a href="#"><img width="32" height="32" src="img/social5.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-5 ft-menu">
+              <div class="row">
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Chính sách
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="/" title="Chính sách thành viên">Chính sách thành viên</a></li>
+                    <li><a href="/" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                    <li><a href="/" title="Chăm sóc khách hàng">Chăm sóc khách hàng</a></li>
+                    <li><a href="/" title="Phương thức thanh toán">Phương thức thanh toán</a></li>
+                    <li><a href="/" title="Chính sách đổi trả / bảo hành">Chính sách đổi trả / bảo hành</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 link-list col-footer footer-click">
+                  <h4 class="title-menu title-menu2 fs-5_5 text-uppercase fw-bold text-white">
+                    Hướng dẫn
+                    <i class="open_mnu down_icon"></i>
+                  </h4>
+                  <ul class="list-menu hidden-mobile abage p-0">
+                    <li><a href="" title="Denny Member">Denny Member</a></li>
+                    <li><a href="" title="Mua hàng dễ dàng">Mua hàng dễ dàng</a></li>
+                    <li><a href="" title="Hợp tác nhượng quyền">Hợp tác nhượng quyền</a></li>
+                    <li><a href="" title="Hướng dẫn mua hàng online">Hướng dẫn mua hàng
+                        online</a></li>
+                    <li><a href="#" title="Hướng dẫn kiểm tra hạng thẻ thành viên">Hướng dẫn kiểm tra hạng thẻ thành
+                        viên</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h4 class="title-menu fs-5_5 text-uppercase fw-bold text-white mt-2">
+                Đăng ký nhận tin
+              </h4>
+              <form id="mc-form" class="newsletter-form position-relative pb-4" data-toggle="validator"
+                novalidate="true">
+                <input aria-label="Địa chỉ Email" type="email" class="form-control" placeholder="Nhập địa chỉ email">
+                <button class="btn btn-default position-absolute top-0 end-0" type="submit"
+                  aria-label="Đăng ký nhận tin" name="subscribe">
+                  <i class="bi bi-envelope text-white pb-2"></i>
+                </button>
+              </form>
+              <span style=" margin-bottom: 10px;  display: block;">Hình thức thanh toán:</span>
+              <ul
+                class="thanhtoan d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><img width="57" height="35" src="img/payment_1.png"></li>
+                <li><img width="57" height="35" src="img/payment_2.png"></li>
+                <li><img width="57" height="35" src="img/payment_3.png"></li>
+              </ul>
+              <span style="margin-bottom: 10px;  display: block;margin-top: 20px;">Liên kết sàn:</span>
+              <ul
+                class="social d-flex ps-0 gap-2 justify-content-sm-center justify-content-xl-start justify-content-lg-start">
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san1.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san2.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san3.png"> </a></li>
+                <li><a href="#" title="Shopee"><img width="32" height="32" src="img/san4.png"> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="copyright">
+        <div class="container text-center">
+          <span class="copy-right">Bản quyền thuộc về <b>Sudes theme</b>.</span>
+          <span class="opacity1">
+            Clone bởi: PS28717
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="js/owl.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>
